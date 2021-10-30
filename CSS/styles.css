@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Varela Round", sans-serif;
 }
 
 h1,
@@ -39,4 +40,127 @@ button {
   --primary: #5771e1;
   --secondary: #f58f23;
   --black: #2c2c2c;
+  --font: #474747;
+  --font1: #808080;
+  --font2: #c2c2c2;
+  --transition1: all 0.3s ease-in;
+}
+
+.container {
+  max-width: 90%;
+  margin: auto;
+}
+
+body {
+  height: 1000rem;
+}
+/* ==================================================================
+                    Styling Starts here 
+================================================================== */
+
+/* ---------------------------------------------------- 
+            Styling Navbar 
+----------------------------------------------------  */
+
+.page {
+  margin-top: 2rem;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+}
+
+.navTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.callFreeBox a button {
+  display: flex;
+  align-items: center;
+
+  box-shadow: 0px 0px 10px 1px var(--font2);
+}
+
+.primaryBtn {
+  border: 1px solid var(--secondary);
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  color: var(--secondary);
+  font-size: 1rem;
+}
+
+.callFreeBox a button i {
+  margin-right: 1rem;
+}
+.siteName {
+  color: var(--font);
+  font-size: 1.3rem;
+}
+
+.siteName span {
+  color: var(--secondary);
+  font-weight: bold;
+}
+
+.hamBurger {
+  color: var(--primary);
+  font-size: 1.5rem;
+}
+
+.navBottom {
+  margin: 2rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ------------------ Styling sidebar ----------------------- */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  background: white;
+  height: 100vh;
+  overflow-y: scroll;
+  width: 100%;
+  padding: 2rem 1rem;
+  margin: auto;
+  transition: var(--transition1);
+}
+
+.sidebarHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sidebarHeader i {
+  font-size: 2rem;
+  color: var(--font1);
+  -webkit-text-stroke: 4px white;
+}
+
+.sidebarMenu {
+  margin: 6rem 0rem;
+}
+
+.sidebarMenu ul li {
+  margin: 2rem 0rem;
+  color: var(--font);
+}
+
+.sidebarFooter p {
+  font-size: 1.7rem;
+  font-weight: bold;
+  line-height: 2.5rem;
+}
+
+.sidebarFooter a button {
+  margin: 2rem 0rem;
+  padding: 1rem 3.5rem;
+  font-size: 0.9rem;
 }
