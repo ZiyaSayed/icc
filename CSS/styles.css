@@ -390,3 +390,32 @@ main {
 .testimonialText a {
   color: var(--primary);
 }
+
+/* ---------------------------------------------------- 
+            Styling FooterForm section
+----------------------------------------------------  */
+
+.footerForm {
+  margin-top: 2rem;
+}
+
+.footerFormSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.ffTitle,
+.ffNumber {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.ffInstructions {
+  margin: 2rem 0rem;
+  font-size: 1.1rem;
+  color: var(--font);
+}
+
+.ffTop a button {
+  margin: 2rem 0rem;
+}
