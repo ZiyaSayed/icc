@@ -52,9 +52,6 @@ button {
   margin: auto;
 }
 
-body {
-  height: 1000rem;
-}
 /* ==================================================================
                     Styling Starts here 
 ================================================================== */
@@ -418,4 +415,50 @@ main {
 
 .ffTop a button {
   margin: 2rem 0rem;
+}
+
+/* ---------------------------------------------------- 
+            Styling Footer
+----------------------------------------------------  */
+
+footer {
+  margin-top: 2rem;
+  background: var(--black);
+  color: white;
+}
+
+.footerSiteName {
+  color: white;
+}
+
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 6rem 2rem;
+  max-width: 90%;
+  margin: auto;
+}
+
+.footerlist p {
+  font-weight: bold;
+}
+
+.footerlist ul li {
+  margin-top: 1rem;
+}
+
+.footerNumber {
+  margin: 2rem 0rem;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.footerRight {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #f4f4f4;
+}
+
+.footerRight p:not(:last-child) {
+  margin-bottom: 2rem;
 }
