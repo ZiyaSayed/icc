@@ -180,6 +180,11 @@ body {
 main {
   margin-top: 2rem;
 }
+.container1 {
+  padding: 2rem;
+  background: #fcfcfc;
+  border-radius: 10px;
+}
 
 .faqGrids {
   display: flex;
@@ -224,7 +229,7 @@ main {
 ----------------------------------------------------  */
 
 .aboutUs {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .aboutSection {
@@ -252,3 +257,27 @@ main {
 /* ---------------------------------------------------- 
             Styling Who we are section
 ----------------------------------------------------  */
+.intro {
+  margin-top: 2rem;
+}
+
+.introGridHolder {
+  display: flex;
+  flex-direction: column;
+}
+
+.introGrid {
+  margin-top: 2rem;
+}
+.introGrid:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.introGrid img {
+  width: 3rem;
+}
+
+.introGrid p {
+  color: var(--primary);
+  font-size: 1.5rem;
+  margin: 1rem 0rem;
+}
