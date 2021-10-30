@@ -37,12 +37,13 @@ button {
 }
 
 :root {
-  --primary: #223ebf;
+  --primary: #6581fa;
   --secondary: #f58f23;
   --black: #2c2c2c;
   --font: #474747;
   --font1: #808080;
   --font2: #c2c2c2;
+  --font3: #707070;
   --transition1: all 0.3s ease-in;
 }
 
@@ -116,6 +117,13 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+/* ------------------ Navbar Media Query ----------------------- */
+
+/* @media (min-width: )
+{
+
+} */
 
 /* ------------------ Styling sidebar ----------------------- */
 
@@ -213,4 +221,34 @@ main {
 
 /* ---------------------------------------------------- 
             Styling About Us 
+----------------------------------------------------  */
+
+.aboutUs {
+  margin-top: 2rem;
+}
+
+.aboutSection {
+  display: flex;
+}
+
+.aboutImage {
+  display: none;
+}
+
+.aboutText p {
+  margin: 1rem 0rem;
+  color: var(--font3);
+  font-size: 1.1rem;
+}
+
+.secondaryBtn {
+  background: var(--secondary);
+  color: white;
+  border-radius: 8px;
+  padding: 1rem 2.5rem;
+  margin-top: 2rem;
+}
+
+/* ---------------------------------------------------- 
+            Styling Who we are section
 ----------------------------------------------------  */
