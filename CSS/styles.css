@@ -180,11 +180,6 @@ body {
 main {
   margin-top: 2rem;
 }
-.container1 {
-  padding: 2rem;
-  background: #fcfcfc;
-  border-radius: 10px;
-}
 
 .faqGrids {
   display: flex;
@@ -228,6 +223,14 @@ main {
             Styling About Us 
 ----------------------------------------------------  */
 
+.container1 {
+  padding: 2rem;
+  border-radius: 15px;
+}
+
+.snowBg {
+  background: #fcfcfc;
+}
 .aboutUs {
   margin-top: 1rem;
 }
@@ -280,4 +283,71 @@ main {
   color: var(--primary);
   font-size: 1.5rem;
   margin: 1rem 0rem;
+}
+
+/* ---------------------------------------------------- 
+            Styling Services section
+----------------------------------------------------  */
+
+.snow1Bg {
+  background: #fafafa;
+}
+
+.services {
+  margin-top: 1rem;
+}
+
+.serviceHeader h1 {
+  font-size: 3rem;
+}
+
+.serviceHeader p {
+  font-size: 0.9rem;
+  margin: 1rem 0rem;
+  color: var(--font3);
+}
+
+.serviceSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.serviceGridHolder {
+  display: flex;
+  flex-direction: column;
+}
+
+.serviceGrid {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  margin: 1rem 0rem;
+  padding: 2rem 1rem;
+  border-radius: 20px;
+}
+
+.serviceGridText h2 {
+  margin: 1rem 0rem;
+  color: var(--black);
+}
+
+.serviceGridText p {
+  margin: 2rem 0rem;
+  color: var(--font3);
+}
+.serviceGrid img {
+  width: 5rem;
+}
+
+.serviceFooter {
+  margin: 3rem auto;
+  margin-bottom: 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.serviceFooter h1 {
+  font-size: 1.8rem;
+  color: var(--black);
 }
