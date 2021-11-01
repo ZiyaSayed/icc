@@ -379,13 +379,13 @@ main {
 }
 
 .serviceGridHolder {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .serviceGrid {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   background: white;
   margin: 1rem 0rem;
   padding: 2rem 1rem;
@@ -418,6 +418,26 @@ main {
   color: var(--black);
 }
 
+/* ----------------------- services Media Query ------------------------ */
+@media (min-width: 1024px) {
+  .serviceGridHolder {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+  }
+
+  .serviceGrid {
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+    grid-gap: 2rem;
+    padding: 1rem;
+  }
+
+  .serviceGrid img {
+    grid-column: 2;
+    grid-row: 1;
+    width: 6rem;
+  }
+}
 /* ---------------------------------------------------- 
             Styling testimonial section
 ----------------------------------------------------  */
@@ -427,8 +447,8 @@ main {
 }
 
 .testimonialGridHolder {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .testimonialGrid {
@@ -457,6 +477,14 @@ main {
   color: var(--primary);
 }
 
+/* ----------------------- Testimonial Media Query ------------------------ */
+
+@media (min-width: 1024px) {
+  .testimonialGridHolder {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+  }
+}
 /* ---------------------------------------------------- 
             Styling FooterForm section
 ----------------------------------------------------  */
@@ -466,8 +494,8 @@ main {
 }
 
 .footerFormSection {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .ffTitle,
@@ -486,6 +514,13 @@ main {
   margin: 2rem 0rem;
 }
 
+/* ----------------------- Testimonial Media Query ------------------------ */
+
+@media (min-width: 1024px) {
+  .footerFormSection {
+    grid-template-columns: repeat(2, auto);
+  }
+}
 /* ---------------------------------------------------- 
             Styling Footer
 ----------------------------------------------------  */
@@ -501,8 +536,8 @@ footer {
 }
 
 .footerContainer {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   padding: 6rem 2rem;
   max-width: 90%;
   margin: auto;
@@ -530,4 +565,15 @@ footer {
 
 .footerRight p:not(:last-child) {
   margin-bottom: 2rem;
+}
+
+/* ----------------------- Footer Media Query ------------------------ */
+@media (min-width: 1024px) {
+  .footerContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footerRight {
+    margin: 0rem;
+  }
 }
