@@ -117,11 +117,6 @@ button {
 
 /* ------------------ Navbar Media Query ----------------------- */
 
-/* @media (min-width: )
-{
-
-} */
-
 /* ------------------ Styling sidebar ----------------------- */
 
 .sidebar {
@@ -183,8 +178,8 @@ main {
   align-items: center;
 }
 .faqGridSection {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   width: 100%;
 }
 
@@ -196,6 +191,11 @@ main {
   border-radius: 10px;
   padding: 2rem 1.5rem;
   margin-bottom: 1rem;
+  transition: var(--transition1);
+}
+
+.faqGrid:hover {
+  transform: scale(1.1);
 }
 
 .faqGridImage img {
@@ -216,6 +216,23 @@ main {
   font-size: 1rem;
 }
 
+/* ----------------------- FAQ Media Query ------------------------ */
+
+@media (min-width: 525px) {
+  .faqGridSection {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    width: auto;
+  }
+
+  .faqGridImage img {
+    width: 3rem;
+  }
+
+  .faqGridText h3 {
+    font-size: 1.2rem;
+  }
+}
 /* ---------------------------------------------------- 
             Styling About Us 
 ----------------------------------------------------  */
@@ -253,6 +270,7 @@ main {
   padding: 1rem 2.5rem;
   margin-top: 2rem;
 }
+/* ----------------------- aboutUs Media Query ------------------------ */
 
 /* ---------------------------------------------------- 
             Styling Who we are section
