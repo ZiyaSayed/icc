@@ -117,6 +117,16 @@ button {
 
 /* ------------------ Navbar Media Query ----------------------- */
 
+@media (min-width: 1024px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .hamBurger {
+    margin-right: 2rem;
+  }
+}
 /* ------------------ Styling sidebar ----------------------- */
 
 .sidebar {
@@ -222,7 +232,6 @@ main {
   .faqGridSection {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
-    width: auto;
   }
 
   .faqGridImage img {
@@ -250,7 +259,7 @@ main {
 }
 
 .aboutSection {
-  display: flex;
+  display: grid;
 }
 
 .aboutImage {
@@ -271,6 +280,21 @@ main {
   margin-top: 2rem;
 }
 /* ----------------------- aboutUs Media Query ------------------------ */
+@media (min-width: 1024px) {
+  .aboutSection {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    align-items: center;
+  }
+
+  .aboutImage {
+    display: block;
+  }
+
+  .aboutImage img {
+    width: 100%;
+  }
+}
 
 /* ---------------------------------------------------- 
             Styling Who we are section
@@ -280,12 +304,15 @@ main {
 }
 
 .introGridHolder {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .introGrid {
   margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .introGrid:not(:last-child) {
   margin-bottom: 2rem;
@@ -300,6 +327,30 @@ main {
   margin: 1rem 0rem;
 }
 
+/* ----------------------- who we are Media Query ------------------------ */
+
+@media (min-width: 525px) {
+  .introGridHolder {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 2rem;
+    grid-gap: 2rem;
+    align-items: center;
+  }
+
+  .introGrid {
+    margin-top: 0rem;
+  }
+  .introGrid:not(:last-child) {
+    margin-bottom: 0rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .introGridHolder {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+  }
+}
 /* ---------------------------------------------------- 
             Styling Services section
 ----------------------------------------------------  */
