@@ -24,6 +24,7 @@ ul li {
 a {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
 
 ul li a {
@@ -34,6 +35,11 @@ ul li a {
 button {
   background: transparent;
   border: none;
+  cursor: pointer;
+}
+
+i {
+  cursor: pointer;
 }
 
 :root {
@@ -87,7 +93,14 @@ button {
   border-radius: 5px;
   padding: 0.5rem 1rem;
   color: var(--secondary);
+  transition: var(--transition1);
   font-size: 1rem;
+}
+
+.primaryBtn:hover {
+  border: 1px solid transparent;
+  background: var(--secondary);
+  color: white;
 }
 
 .callFreeBox a button i {
@@ -140,6 +153,13 @@ button {
   padding: 2rem 1rem;
   margin: auto;
   transition: var(--transition1);
+}
+
+@media (min-width: 1024px) {
+  .sidebar {
+    width: 50%;
+    overflow-y: hidden;
+  }
 }
 
 .sidebarHeader {
@@ -273,11 +293,19 @@ main {
 }
 
 .secondaryBtn {
+  border: 2px solid transparent;
   background: var(--secondary);
   color: white;
   border-radius: 8px;
   padding: 1rem 2.5rem;
   margin-top: 2rem;
+  transition: var(--transition1);
+}
+
+.secondaryBtn:hover {
+  border: 2px solid var(--secondary);
+  color: var(--secondary);
+  background: transparent;
 }
 /* ----------------------- aboutUs Media Query ------------------------ */
 @media (min-width: 1024px) {
@@ -457,6 +485,7 @@ main {
   padding: 2rem 1rem;
   margin-top: 1.5rem;
   border-radius: 15px;
+  transition: var(--transition1);
 }
 
 .testimonialTitle {
@@ -483,6 +512,10 @@ main {
   .testimonialGridHolder {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
+  }
+
+  .testimonialGrid:hover {
+    transform: scale(1.1);
   }
 }
 /* ---------------------------------------------------- 

@@ -8,4 +8,5 @@ bar.addEventListener("click", () => {
 
 cross.addEventListener("click", () => {
   sidebar.style["left"] = "-100%";
+  sidebar.style["box-shadow"] = "0px 0px 10px 0.1px var(--font2)";
 });
